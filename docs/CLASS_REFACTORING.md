@@ -15,6 +15,22 @@ The project has been completely refactored to use BEM (Block Element Modifier) m
 
 ### Block__Element--Modifier Pattern
 
+#### Hero Block
+```html
+<header class="hero" id="home">
+  <div class="hero__content">
+    <div class="container">
+      <img src="..." alt="Profile Photo" class="hero__image" />
+      <h1 class="hero__title">Piyush Raorane</h1>
+      <p class="hero__subtitle">Full-Stack Web Developer | Computer Engineering Student</p>
+      <nav class="hero__social" aria-label="Social Networks">
+        <a href="#" class="hero__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </nav>
+    </div>
+  </div>
+</header>
+```
+
 #### Navigation Block
 ```html
 <nav class="nav" aria-label="Main Navigation">
@@ -84,6 +100,58 @@ src/css/
 ```
 
 ### BEM Class Examples
+
+#### Hero Classes
+```css
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 40px;
+  padding-top: 120px; /* Account for fixed nav */
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__image {
+  display: block;
+  width: 160px;
+  aspect-ratio: 1;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.hero__social {
+  margin-top: 15px;
+}
+
+.hero__social-link {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.hero__social-link:hover {
+  transform: scale(1.2);
+}
+```
 
 #### Navigation Classes
 ```css
