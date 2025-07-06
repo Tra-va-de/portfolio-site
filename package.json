@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "Современный сайт-портфолио с поддержкой PWA",
+  "description": "Modern portfolio website with PWA support",
   "main": "index.html",
   "scripts": {
     "start": "npx serve .",
@@ -15,9 +15,16 @@
     "pwa",
     "web-development",
     "responsive",
-    "modern"
+    "modern",
+    "fullstack",
+    "react",
+    "nodejs"
   ],
-  "author": "Ваше Имя",
+  "author": {
+    "name": "Piyush Raorane",
+    "email": "piyushraorane24@gmail.com",
+    "url": "https://piyushsanjaykumarraorane.github.io/Portfolio-Website/"
+  },
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2",
@@ -25,10 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/portfolio-site.git"
+    "url": "https://github.com/piyushsanjaykumarraorane/Portfolio-Website.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/portfolio-site/issues"
+    "url": "https://github.com/piyushsanjaykumarraorane/Portfolio-Website/issues"
   },
-  "homepage": "https://github.com/yourusername/portfolio-site#readme"
+  "homepage": "https://piyushsanjaykumarraorane.github.io/Portfolio-Website/",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
 } 
