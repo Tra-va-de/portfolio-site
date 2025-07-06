@@ -5,11 +5,26 @@
   line-height: 1.7;
 }
 
+
+.skills__content {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.skills__carousel {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  animation: skills-scroll 30s linear infinite;
+}
+
 .skills__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,6 +35,59 @@
   padding: 8px 14px;
   border-radius: 6px;
   font-size: 0.95rem;
+  white-space: nowrap;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills__item:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Анимация прокрутки */
+@keyframes skills-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 10px)); /* Сдвигаем на половину ширины */
+  }
+}
+
+/* Пауза при наведении */
+.skills__carousel:hover {
+  animation-play-state: paused;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .skills__carousel {
+    animation-duration: 20s; /* Быстрее на мобильных */
+  }
+  
+  .skills__item {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .skills__list {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__carousel {
+    animation-duration: 15s;
+  }
+  
+  .skills__item {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+  
+  .skills__list {
+    gap: 12px;
+  }
 }
 
 .projects__list {
