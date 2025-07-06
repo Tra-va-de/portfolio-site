@@ -44,25 +44,25 @@
   transform: translateY(-2px);
 }
 
-/* Анимация прокрутки */
+/* Scroll animation */
 @keyframes skills-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% - 10px)); /* Сдвигаем на половину ширины */
+    transform: translateX(calc(-50% - 10px)); /* Move by half width */
   }
 }
 
-/* Пауза при наведении */
+/* Pause on hover */
 .skills__carousel:hover {
   animation-play-state: paused;
 }
 
-/* Адаптивность */
+/* Responsive */
 @media (max-width: 768px) {
   .skills__carousel {
-    animation-duration: 20s; /* Быстрее на мобильных */
+    animation-duration: 20s; /* Faster on mobile */
   }
   
   .skills__item {
