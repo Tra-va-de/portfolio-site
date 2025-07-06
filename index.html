@@ -1,130 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Piyush Raorane | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio | Web Developer</title>
+
+  <!-- Meta tags for SEO and author information -->
+  <meta name="description" content="Web developer portfolio with projects and skills" />
+  <meta name="keywords" content="web developer, portfolio, frontend, backend, fullstack" />
+  <meta name="author" content="Piyush Raorane" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:title" content="Portfolio | Web Developer" />
+  <meta property="og:description" content="Web developer portfolio with projects and skills" />
+  <meta property="og:image" content="src/images/resume photo.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://your-domain.com/" />
+  <meta property="twitter:title" content="Portfolio | Web Developer" />
+  <meta property="twitter:description" content="Web developer portfolio with projects and skills" />
+  <meta property="twitter:image" content="src/images/resume photo.jpg" />
+
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="images/icon-192.png" type="image/png" />
-  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png" />
+
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="src/js/main.js" defer></script>
 </head>
+
 <body>
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main Navigation">
+    <div class="container">
+      <a href="#home" class="nav__logo" aria-label="Go home">Portfolio</a>
+
+      <ul class="nav__menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <img src="images/resume photo.jpg" alt="Profile Photo" class="profile-img" />
-    <h1>Piyush Raorane</h1>
-    <p>Full-Stack Web Developer | Computer Engineering Student</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+  <header class="hero" id="home">
+    <div class="hero__content">
+      <div class="container">
+        <img src="src/images/resume photo.jpg" alt="Profile Photo" class="hero__image" />
+        <h1 class="hero__title">Piyush Raorane</h1>
+        <p class="hero__subtitle">Full-Stack Web Developer | Computer Engineering Student</p>
+
+        <nav class="hero__social" aria-label="Social Networks">
+          <a href="#" class="hero__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="hero__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hero__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hero__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate full-stack web developer with a love for creating innovative digital solutions. My journey in programming started with curiosity and has evolved into a deep commitment to crafting clean, efficient, and user-friendly applications.</p>
-    <p>With expertise spanning both front-end and back-end technologies, I enjoy the challenge of bringing ideas to life through code. I believe in writing maintainable code, following best practices, and continuously learning new technologies to stay at the forefront of web development.</p>
-    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on meaningful projects.</p>
-  </section>
+  <main>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <header class="about__header section-header">
+          <h2 class="about__title">About Me</h2>
+        </header>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <h2>Skills & Technologies</h2>
-    <ul class="skills-list">
-      <li>React</li><li>Node.js</li><li>Vue.js</li><li>Express</li><li>MongoDB</li>
-      <li>WordPress</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
-      <li>Python</li><li>Flask</li><li>D3.js</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-
-      <div class="card">
-        <img src="images/ecommerce.jpg" alt="E-Commerce Platform">
-        <h3>E-Commerce Platform</h3>
-        <p>Full-stack e-commerce app with auth, payments, and dashboard.</p>
-        <span class="tech">React • Node.js • MongoDB</span>
+        <article class="about__content">
+          <p class="about__text">I'm a passionate full-stack web developer with a love for creating innovative digital
+            solutions. My journey in programming started with curiosity and has evolved into a deep commitment to
+            crafting clean, efficient, and user-friendly applications.</p>
+          <p class="about__text">With expertise spanning both front-end and back-end technologies, I enjoy the challenge
+            of bringing ideas to life through code. I believe in writing maintainable code, following best practices,
+            and continuously learning new technologies to stay at the forefront of web development.</p>
+          <p class="about__text">When I'm not coding, you'll find me exploring new technologies, contributing to
+            open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new
+            challenges and collaborate on meaningful projects.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="images/project2.png" alt="Task Management App">
-        <h3>Task Management App</h3>
-        <p>Collaborative tool with real-time updates & team tasks.</p>
-        <span class="tech">Vue.js • Express • Socket.io</span>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <header class="skills__header section-header">
+          <h2 class="skills__title">Skills & Technologies</h2>
+        </header>
+        <div class="skills__content">
+          <div class="skills__carousel">
+            <ul class="skills__list skills__list--primary" role="list" aria-label="Skills and Technologies">
+              <li class="skills__item" role="listitem">React</li>
+              <li class="skills__item" role="listitem">Node.js</li>
+              <li class="skills__item" role="listitem">Vue.js</li>
+              <li class="skills__item" role="listitem">Express</li>
+              <li class="skills__item" role="listitem">MongoDB</li>
+              <li class="skills__item" role="listitem">WordPress</li>
+              <li class="skills__item" role="listitem">PHP</li>
+              <li class="skills__item" role="listitem">JavaScript</li>
+              <li class="skills__item" role="listitem">HTML</li>
+              <li class="skills__item" role="listitem">CSS</li>
+              <li class="skills__item" role="listitem">Python</li>
+              <li class="skills__item" role="listitem">Flask</li>
+              <li class="skills__item" role="listitem">D3.js</li>
+            </ul>
+            <ul class="skills__list skills__list--duplicate" role="list" aria-hidden="true">
+              <li class="skills__item" role="listitem">React</li>
+              <li class="skills__item" role="listitem">Node.js</li>
+              <li class="skills__item" role="listitem">Vue.js</li>
+              <li class="skills__item" role="listitem">Express</li>
+              <li class="skills__item" role="listitem">MongoDB</li>
+              <li class="skills__item" role="listitem">WordPress</li>
+              <li class="skills__item" role="listitem">PHP</li>
+              <li class="skills__item" role="listitem">JavaScript</li>
+              <li class="skills__item" role="listitem">HTML</li>
+              <li class="skills__item" role="listitem">CSS</li>
+              <li class="skills__item" role="listitem">Python</li>
+              <li class="skills__item" role="listitem">Flask</li>
+              <li class="skills__item" role="listitem">D3.js</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="images/project1.png" alt="Weather Dashboard">
-        <h3>Weather Dashboard</h3>
-        <p>Responsive app with forecasts and interactive charts.</p>
-        <span class="tech">JavaScript • APIs • Chart.js</span>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <header class="projects__header section-header">
+          <h2 class="projects__title">Projects</h2>
+        </header>
+        <div class="projects__list projects-grid" role="grid" aria-label="Projects List">
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/ecommerce.jpg" alt="E-Commerce Platform Screenshot" class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">E-Commerce Platform</h3>
+              <p class="projects__desc">Full-stack e-commerce app with auth, payments, and dashboard.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">React • Node.js • MongoDB</span>
+              </footer>
+            </div>
+          </article>
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/project2.png" alt="Task Management App Screenshot" class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">Task Management App</h3>
+              <p class="projects__desc">Collaborative tool with real-time updates & team tasks.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">Vue.js • Express • Socket.io</span>
+              </footer>
+            </div>
+          </article>
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/project1.png" alt="Weather Dashboard Screenshot" class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">Weather Dashboard</h3>
+              <p class="projects__desc">Responsive app with forecasts and interactive charts.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">JavaScript • APIs • Chart.js</span>
+              </footer>
+            </div>
+          </article>
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/portfolio.jpg" alt="Portfolio Website Screenshot" class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">Portfolio Website</h3>
+              <p class="projects__desc">Modern, responsive site to showcase your projects and skills.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">React • Tailwind • Framer Motion</span>
+              </footer>
+            </div>
+          </article>
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/blog-site.jpg" alt="Blog CMS Screenshot" class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">Blog CMS</h3>
+              <p class="projects__desc">SEO-optimized content manager with rich text editing.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">WordPress • PHP • MySQL</span>
+              </footer>
+            </div>
+          </article>
+          <article class="projects__item card" role="gridcell">
+            <img src="src/images/Data-Visualization-Tools.jpg" alt="Data Visualization Tool Screenshot"
+              class="projects__image">
+            <div class="projects__content">
+              <h3 class="projects__name">Data Visualization Tool</h3>
+              <p class="projects__desc">Interactive dashboard for analyzing and visualizing data.</p>
+              <footer class="projects__footer">
+                <span class="projects__tech">Python • D3.js • Flask</span>
+              </footer>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="images/portfolio.jpg" alt="Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>Modern, responsive site to showcase your projects and skills.</p>
-        <span class="tech">React • Tailwind • Framer Motion</span>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <header class="experience__header section-header">
+          <h2 class="experience__title">Experience</h2>
+        </header>
+        <div class="experience__list experience-grid" role="list">
+          <article class="experience__item card" role="listitem">
+            <header class="experience__item-header">
+              <h3 class="experience__item-title">Intern at XYZ Company</h3>
+              <time class="experience__item-time" datetime="2023-06">June 2023</time>
+            </header>
+            <p class="experience__item-desc">Worked on full-stack development including CMS & e-commerce platforms.</p>
+          </article>
+          <article class="experience__item card" role="listitem">
+            <header class="experience__item-header">
+              <h3 class="experience__item-title">Intern at ABC Pvt. Ltd.</h3>
+              <time class="experience__item-time" datetime="2023-03">March 2023</time>
+            </header>
+            <p class="experience__item-desc">Contributed to frontend, WordPress customization, and APIs.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <img src="images/blog-site.jpg" alt="Blog CMS">
-        <h3>Blog CMS</h3>
-        <p>SEO-optimized content manager with rich text editing.</p>
-        <span class="tech">WordPress • PHP • MySQL</span>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <header class="contact__header section-header">
+          <h2 class="contact__title">Let's Work Together</h2>
+        </header>
+        <div class="contact__content">
+          <p class="contact__desc">I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+          <address class="contact__info">
+            <dl class="contact__info-list">
+              <dt class="contact__info-term">Email:</dt>
+              <dd class="contact__info-value"><a href="mailto:piyushraorane24@gmail.com">piyushraorane24@gmail.com</a>
+              </dd>
+              <dt class="contact__info-term">Phone:</dt>
+              <dd class="contact__info-value"><a href="tel:+917276702595">+91 7276702595</a></dd>
+              <dt class="contact__info-term">Location:</dt>
+              <dd class="contact__info-value">India</dd>
+            </dl>
+          </address>
+          <aside class="contact__services">
+            <h3 class="contact__services-title">Services I Offer:</h3>
+            <ul class="contact__services-list" role="list">
+              <li class="contact__services-item" role="listitem">💡 Web Development – Custom websites & applications
+              </li>
+              <li class="contact__services-item" role="listitem">🚀 Full-Stack Solutions – End-to-end development</li>
+              <li class="contact__services-item" role="listitem">🔧 Technical Consulting – Architecture & tech advice
+              </li>
+            </ul>
+          </aside>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="card">
-        <img src="images/Data-Visualization-Tools.jpg" alt="Data Viz Tool">
-        <h3>Data Visualization Tool</h3>
-        <p>Interactive dashboard for analyzing and visualizing data.</p>
-        <span class="tech">Python • D3.js • Flask</span>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="container">
+        <p>&copy; <time datetime="2024">2024</time> Piyush Raorane. All rights reserved.</p>
+
+        <nav class="footer-nav" aria-label="Additional Navigation">
+          <a href="#home">Top</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </div>
-  </section>
-
-  <!-- Work Experience -->
-  <section class="section" id="experience">
-    <h2>Experience</h2>
-    <div class="experience-grid">
-      <div class="card">
-        <h3>Intern at XYZ Company</h3>
-        <p>Worked on full-stack development including CMS & e-commerce platforms.</p>
-      </div>
-      <div class="card">
-        <h3>Intern at ABC Pvt. Ltd.</h3>
-        <p>Contributed to frontend, WordPress customization, and APIs.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Let's Work Together -->
-  <section class="section" id="work">
-    <h2>Let's Work Together</h2>
-    <p>I’m always interested in new opportunities and exciting projects. Let’s connect!</p>
-
-    <ul>
-      <li><strong>Email:</strong> piyushraorane24@gmail.com</li>
-      <li><strong>Phone:</strong> +91 7276702595</li>
-      <li><strong>Location:</strong> India</li>
-    </ul>
-
-    <p><strong>Services I Offer:</strong></p>
-    <ul>
-      <li>💡 Web Development – Custom websites & applications</li>
-      <li>🚀 Full-Stack Solutions – End-to-end development</li>
-      <li>🔧 Technical Consulting – Architecture & tech advice</li>
-    </ul>
-  </section>
+  </footer>
 
 </body>
+
 </html>
