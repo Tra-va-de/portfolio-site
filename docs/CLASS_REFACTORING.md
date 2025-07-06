@@ -1,37 +1,37 @@
-# Рефакторинг классов
+# Class Refactoring
 
-## Изменение класса `section` на уникальные имена классов
+## Changing `section` class to unique class names
 
-### Обоснование
+### Rationale
 
-Класс `section` был слишком общим и мог конфликтовать с HTML элементом `<section>`. Замена на уникальные имена классов делает каждый раздел более специфичным и семантически понятным.
+The `section` class was too generic and could conflict with the HTML `<section>` element. Replacing it with unique class names makes each section more specific and semantically clear.
 
-### Изменения
+### Changes
 
 #### HTML (index.html)
-- ✅ Заменен `class="section"` на уникальные классы для каждой секции
-- ✅ Затронутые секции:
-  - `about-section` - секция "Обо мне"
-  - `skills-section` - секция "Навыки и Технологии"
-  - `projects-section` - секция "Проекты"
-  - `experience-section` - секция "Опыт работы"
-  - `contact-section` - секция "Контакты"
+- ✅ Replaced `class="section"` with unique classes for each section
+- ✅ Affected sections:
+  - `about-section` - "About Me" section
+  - `skills-section` - "Skills & Technologies" section
+  - `projects-section` - "Projects" section
+  - `experience-section` - "Experience" section
+  - `contact-section` - "Contact" section
 
 #### CSS (src/css/sections.css)
-- ✅ Заменен `.section` на специфичные селекторы для каждой секции
-- ✅ Заменен `.section p` на специфичные селекторы для параграфов
+- ✅ Replaced `.section` with specific selectors for each section
+- ✅ Replaced `.section p` with specific selectors for paragraphs
 
-### Преимущества
+### Benefits
 
-1. **Семантическая ясность**: Каждый класс четко указывает на назначение секции
-2. **Избежание конфликтов**: Нет конфликта с HTML элементом `<section>`
-3. **Уникальность**: Каждая секция имеет свой уникальный класс
-4. **Гибкость**: Можно легко стилизовать каждую секцию индивидуально
-5. **Читаемость**: Код становится более понятным и самодокументируемым
+1. **Semantic clarity**: Each class clearly indicates the section's purpose
+2. **Conflict avoidance**: No conflict with HTML `<section>` element
+3. **Uniqueness**: Each section has its own unique class
+4. **Flexibility**: Easy to style each section individually
+5. **Readability**: Code becomes more understandable and self-documenting
 
-### Структура до и после
+### Structure Before and After
 
-#### До:
+#### Before:
 ```html
 <section class="section" id="about">
   <!-- content -->
@@ -46,7 +46,7 @@
 }
 ```
 
-#### После:
+#### After:
 ```html
 <section class="about-section" id="about">
   <!-- content -->
@@ -65,22 +65,22 @@
 }
 ```
 
-### Сохраненные классы
+### Preserved Classes
 
-- `.section-header` - остается без изменений, так как это отдельный класс для заголовков секций
-- `.section-header h2` - стили для заголовков секций
-- `.section-header h2::after` - декоративные элементы заголовков
+- `.section-header` - remains unchanged as it's a separate class for section headers
+- `.section-header h2` - styles for section headers
+- `.section-header h2::after` - decorative header elements
 
-### Проверка изменений
+### Verification of Changes
 
-1. ✅ Все `class="section"` заменены на уникальные классы
-2. ✅ CSS селекторы `.section` заменены на специфичные селекторы
-3. ✅ Стилизация работает корректно
-4. ✅ Семантическая структура улучшена
+1. ✅ All `class="section"` replaced with unique classes
+2. ✅ CSS selectors `.section` replaced with specific selectors
+3. ✅ Styling works correctly
+4. ✅ Semantic structure improved
 
-### Следующие шаги
+### Next Steps
 
-Если в будущем потребуется добавить дополнительные секции:
-- Создавайте уникальные классы для каждой секции (например, `services-section`, `blog-section`)
-- Используйте семантические имена классов
-- Добавляйте специфичные стили для каждой секции при необходимости 
+If additional sections need to be added in the future:
+- Create unique classes for each section (e.g., `services-section`, `blog-section`)
+- Use semantic class names
+- Add specific styles for each section as needed 

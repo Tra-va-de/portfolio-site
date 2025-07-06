@@ -1,12 +1,12 @@
-# Инструкции по миграции
+# Migration Instructions
 
-## Перемещение изображений
+## Moving Images
 
-Если у вас есть изображения из оригинального проекта, переместите их в соответствующие папки:
+If you have images from the original project, move them to the appropriate folders:
 
-### Изображения профиля и проектов
+### Profile and Project Images
 ```
-Переместите из корня в src/images/:
+Move from root to src/images/:
 - resume photo.jpg → src/images/profile.jpg
 - ecommerce.jpg → src/images/ecommerce.jpg
 - project1.png → src/images/project1.png
@@ -16,130 +16,130 @@
 - Data-Visualization-Tools.jpg → src/images/Data-Visualization-Tools.jpg
 ```
 
-### Иконки PWA
+### PWA Icons
 ```
-Переместите из images/ в assets/icons/:
+Move from images/ to assets/icons/:
 - icon-192.png → assets/icons/icon-192.png
 - icon-512.png → assets/icons/icon-512.png
 ```
 
-## Настройка под себя
+## Personalization Setup
 
-### 1. Персональная информация
-Откройте `index.html` и замените:
-- "Ваше Имя" на ваше реальное имя
-- Контактную информацию (email, телефон, местоположение)
-- Описание в секции "Обо мне"
+### 1. Personal Information
+Open `index.html` and replace:
+- "Your Name" with your real name
+- Contact information (email, phone, location)
+- Description in the "About Me" section
 
-### 2. Проекты
-- Замените изображения проектов в `src/images/`
-- Обновите описания проектов в HTML
-- Измените технологии в тегах `<span class="tech">`
+### 2. Projects
+- Replace project images in `src/images/`
+- Update project descriptions in HTML
+- Change technologies in `<span class="tech">` tags
 
-### 3. Навыки
-Отредактируйте список навыков в секции `#skills`:
+### 3. Skills
+Edit the skills list in the `#skills` section:
 ```html
 <ul class="skills-list">
-  <li>Ваш навык 1</li>
-  <li>Ваш навык 2</li>
-  <!-- Добавьте свои навыки -->
+  <li>Your skill 1</li>
+  <li>Your skill 2</li>
+  <!-- Add your skills -->
 </ul>
 ```
 
-### 4. Социальные сети
-Обновите ссылки на социальные сети в hero секции:
+### 4. Social Networks
+Update social network links in the hero section:
 ```html
 <div class="social-icons">
   <a href="https://github.com/yourusername" aria-label="GitHub">
     <i class="fab fa-github"></i>
   </a>
-  <!-- Добавьте другие сети -->
+  <!-- Add other networks -->
 </div>
 ```
 
-### 5. PWA настройка
-В `manifest.json`:
-- Измените `name` и `short_name`
-- Обновите `theme_color` если нужно
-- Убедитесь, что пути к иконкам правильные
+### 5. PWA Configuration
+In `manifest.json`:
+- Change `name` and `short_name`
+- Update `theme_color` if needed
+- Make sure icon paths are correct
 
 ### 6. Package.json
-В `package.json`:
-- Замените "Ваше Имя" на ваше имя
-- Обновите `repository.url` на ваш репозиторий
+In `package.json`:
+- Replace "Your Name" with your name
+- Update `repository.url` to your repository
 
-## Запуск проекта
+## Running the Project
 
-1. **Простой запуск:**
+1. **Simple launch:**
    ```bash
-   # Просто откройте index.html в браузере
+   # Just open index.html in browser
    ```
 
-2. **С локальным сервером:**
+2. **With local server:**
    ```bash
-   # Установите зависимости
+   # Install dependencies
    npm install
    
-   # Запустите сервер разработки
+   # Start development server
    npm run dev
    
-   # Или используйте простой сервер
+   # Or use simple server
    npm start
    ```
 
-## Проверка PWA
+## PWA Testing
 
-1. Откройте сайт в Chrome
-2. Откройте DevTools (F12)
-3. Перейдите на вкладку "Application"
-4. Проверьте:
-   - Manifest загружается корректно
-   - Service Worker зарегистрирован
-   - Кэш работает
+1. Open the site in Chrome
+2. Open DevTools (F12)
+3. Go to "Application" tab
+4. Check:
+   - Manifest loads correctly
+   - Service Worker is registered
+   - Cache is working
 
-## Оптимизация для продакшена
+## Production Optimization
 
-1. **Сожмите изображения:**
-   - Используйте WebP формат
-   - Оптимизируйте размеры
+1. **Compress images:**
+   - Use WebP format
+   - Optimize sizes
 
-2. **Минифицируйте CSS и JS:**
-   - Используйте инструменты типа UglifyJS, CSSNano
+2. **Minify CSS and JS:**
+   - Use tools like UglifyJS, CSSNano
 
-3. **Настройте кэширование:**
-   - Обновите `urlsToCache` в service-worker.js
+3. **Configure caching:**
+   - Update `urlsToCache` in service-worker.js
 
-## Структура после миграции
+## Structure After Migration
 
 ```
 portfolio-site/
-├── index.html              # ✅ Обновлен
-├── manifest.json           # ✅ Обновлен
-├── package.json            # ✅ Создан
-├── README.md              # ✅ Создан
-├── .gitignore             # ✅ Создан
+├── index.html              # ✅ Updated
+├── manifest.json           # ✅ Updated
+├── package.json            # ✅ Created
+├── README.md              # ✅ Created
+├── .gitignore             # ✅ Created
 ├── src/
 │   ├── css/
-│   │   ├── main.css       # ✅ Создан
-│   │   ├── base.css       # ✅ Создан
-│   │   ├── hero.css       # ✅ Создан
-│   │   ├── sections.css   # ✅ Создан
-│   │   └── components.css # ✅ Создан
+│   │   ├── main.css       # ✅ Created
+│   │   ├── base.css       # ✅ Created
+│   │   ├── hero.css       # ✅ Created
+│   │   ├── sections.css   # ✅ Created
+│   │   └── components.css # ✅ Created
 │   ├── js/
-│   │   ├── main.js        # ✅ Обновлен
-│   │   └── service-worker.js # ✅ Обновлен
-│   └── images/            # 📁 Переместите изображения сюда
+│   │   ├── main.js        # ✅ Updated
+│   │   └── service-worker.js # ✅ Updated
+│   └── images/            # 📁 Move images here
 ├── assets/
-│   ├── fonts/             # 📁 Для шрифтов
-│   └── icons/             # 📁 Переместите иконки PWA сюда
-└── docs/                  # ✅ Создан
+│   ├── fonts/             # 📁 For fonts
+│   └── icons/             # 📁 Move PWA icons here
+└── docs/                  # ✅ Created
 ```
 
-## Следующие шаги
+## Next Steps
 
-1. Переместите изображения в правильные папки
-2. Настройте персональную информацию
-3. Добавьте свои проекты
-4. Настройте социальные сети
-5. Протестируйте PWA функциональность
-6. Разверните на GitHub Pages или другом хостинге 
+1. Move images to correct folders
+2. Set up personal information
+3. Add your projects
+4. Configure social networks
+5. Test PWA functionality
+6. Deploy to GitHub Pages or other hosting 

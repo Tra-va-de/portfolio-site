@@ -1,51 +1,51 @@
-# Семантические улучшения HTML
+# HTML Semantic Improvements
 
-## Обзор изменений
+## Overview of Changes
 
-HTML структура была полностью переработана для соответствия современным стандартам семантики и доступности.
+The HTML structure has been completely redesigned to comply with modern semantics and accessibility standards.
 
-## Основные улучшения
+## Major Improvements
 
-### 1. Мета-теги и SEO
-- ✅ Добавлены Open Graph теги для социальных сетей
-- ✅ Добавлены Twitter Card теги
-- ✅ Улучшены meta description и keywords
-- ✅ Добавлен meta author
+### 1. Meta Tags and SEO
+- ✅ Added Open Graph tags for social networks
+- ✅ Added Twitter Card tags
+- ✅ Improved meta description and keywords
+- ✅ Added meta author
 
-### 2. Навигация
-- ✅ Добавлен `<nav>` элемент с главной навигацией
-- ✅ Фиксированная навигация с backdrop-filter
-- ✅ Активное состояние для текущей секции
-- ✅ Навигация в footer
+### 2. Navigation
+- ✅ Added `<nav>` element with main navigation
+- ✅ Fixed navigation with backdrop-filter
+- ✅ Active state for current section
+- ✅ Footer navigation
 
-### 3. Структура документа
-- ✅ Использование `<main>` для основного контента
-- ✅ Семантические `<section>` с `<header>`
-- ✅ `<article>` для проектов и опыта работы
-- ✅ `<aside>` для дополнительной информации
-- ✅ `<footer>` с навигацией и копирайтом
+### 3. Document Structure
+- ✅ Using `<main>` for main content
+- ✅ Semantic `<section>` with `<header>`
+- ✅ `<article>` for projects and work experience
+- ✅ `<aside>` for additional information
+- ✅ `<footer>` with navigation and copyright
 
-### 4. Контентные элементы
-- ✅ `<address>` для контактной информации
-- ✅ `<time>` для дат с datetime атрибутом
-- ✅ `<dl>`, `<dt>`, `<dd>` для описательных списков
-- ✅ Улучшенные alt-тексты для изображений
+### 4. Content Elements
+- ✅ `<address>` for contact information
+- ✅ `<time>` for dates with datetime attribute
+- ✅ `<dl>`, `<dt>`, `<dd>` for description lists
+- ✅ Improved alt texts for images
 
-### 5. Доступность (ARIA)
-- ✅ `aria-label` для навигации и кнопок
-- ✅ `role` атрибуты для списков и сеток
-- ✅ `role="list"` и `role="listitem"` для списков
-- ✅ `role="grid"` и `role="gridcell"` для проектов
+### 5. Accessibility (ARIA)
+- ✅ `aria-label` for navigation and buttons
+- ✅ `role` attributes for lists and grids
+- ✅ `role="list"` and `role="listitem"` for lists
+- ✅ `role="grid"` and `role="gridcell"` for projects
 
-### 6. Семантика карточек
-- ✅ `<article>` для проектов
-- ✅ `<header>` для заголовков секций
-- ✅ `<footer>` для технологий в проектах
-- ✅ Структурированный контент внутри карточек
+### 6. Card Semantics
+- ✅ `<article>` for projects
+- ✅ `<header>` for section headers
+- ✅ `<footer>` for technologies in projects
+- ✅ Structured content inside cards
 
-## Структура до и после
+## Structure Before and After
 
-### До:
+### Before:
 ```html
 <div class="card">
   <img src="..." alt="...">
@@ -55,94 +55,94 @@ HTML структура была полностью переработана д�
 </div>
 ```
 
-### После:
+### After:
 ```html
 <article class="card project-card" role="gridcell">
-  <img src="..." alt="Скриншот проекта" class="project-image">
+  <img src="..." alt="Project Screenshot" class="project-image">
   <div class="project-content">
-    <h3>Название проекта</h3>
-    <p>Описание проекта</p>
+    <h3>Project Name</h3>
+    <p>Project Description</p>
     <footer class="project-footer">
-      <span class="tech">Технологии</span>
+      <span class="tech">Technologies</span>
     </footer>
   </div>
 </article>
 ```
 
-## JavaScript улучшения
+## JavaScript Improvements
 
-### 1. Навигация
-- ✅ Плавная прокрутка с учетом высоты навигации
-- ✅ Подсветка активной секции при скролле
-- ✅ Обработка всех навигационных ссылок
+### 1. Navigation
+- ✅ Smooth scrolling with navigation height consideration
+- ✅ Active section highlighting on scroll
+- ✅ Handling all navigation links
 
-### 2. Анимации
-- ✅ Intersection Observer для анимации карточек
-- ✅ Плавное появление элементов при скролле
+### 2. Animations
+- ✅ Intersection Observer for card animations
+- ✅ Smooth element appearance on scroll
 
-### 3. UX улучшения
-- ✅ Кнопка "Наверх" с плавной анимацией
-- ✅ Улучшенная доступность с клавиатуры
+### 3. UX Improvements
+- ✅ "Back to Top" button with smooth animation
+- ✅ Improved keyboard accessibility
 
-## CSS улучшения
+## CSS Improvements
 
-### 1. Навигация
-- ✅ Фиксированная навигация с backdrop-filter
-- ✅ Анимации hover и active состояний
-- ✅ Адаптивность для мобильных устройств
+### 1. Navigation
+- ✅ Fixed navigation with backdrop-filter
+- ✅ Hover and active state animations
+- ✅ Mobile responsiveness
 
-### 2. Карточки
-- ✅ Улучшенная структура с flexbox
-- ✅ Анимации появления
-- ✅ Лучшая типографика
+### 2. Cards
+- ✅ Improved structure with flexbox
+- ✅ Appearance animations
+- ✅ Better typography
 
-### 3. Контакты
-- ✅ Семантическая структура с grid
-- ✅ Улучшенные стили для address и dl
+### 3. Contact
+- ✅ Semantic structure with grid
+- ✅ Improved styles for address and dl
 
-## Преимущества новой структуры
+## Benefits of New Structure
 
 ### 1. SEO
-- Лучшая индексация поисковыми системами
-- Структурированные данные
-- Улучшенные мета-теги
+- Better search engine indexing
+- Structured data
+- Improved meta tags
 
-### 2. Доступность
-- Поддержка скрин-ридеров
-- Навигация с клавиатуры
-- Семантические роли
+### 2. Accessibility
+- Screen reader support
+- Keyboard navigation
+- Semantic roles
 
-### 3. Поддержка
-- Легче поддерживать и расширять
-- Модульная структура
-- Четкое разделение ответственности
+### 3. Maintainability
+- Easier to maintain and extend
+- Modular structure
+- Clear separation of responsibilities
 
-### 4. Производительность
-- Оптимизированные анимации
-- Intersection Observer для ленивой загрузки
-- Улучшенная отзывчивость
+### 4. Performance
+- Optimized animations
+- Intersection Observer for lazy loading
+- Improved responsiveness
 
-## Следующие шаги
+## Next Steps
 
-1. **Мобильное меню** - добавить hamburger меню для мобильных устройств
-2. **Анимации** - добавить более сложные анимации переходов
-3. **Темная тема** - реализовать переключение тем
-4. **Многоязычность** - добавить поддержку других языков
-5. **Аналитика** - добавить отслеживание событий
+1. **Mobile Menu** - add hamburger menu for mobile devices
+2. **Animations** - add more complex transition animations
+3. **Dark Theme** - implement theme switching
+4. **Multilingual** - add support for other languages
+5. **Analytics** - add event tracking
 
-## Тестирование
+## Testing
 
-### Проверка доступности:
+### Accessibility Testing:
 - [ ] WAVE Web Accessibility Evaluator
 - [ ] axe DevTools
 - [ ] Lighthouse Accessibility Audit
 
-### Проверка SEO:
+### SEO Testing:
 - [ ] Google PageSpeed Insights
 - [ ] Lighthouse SEO Audit
 - [ ] Schema.org Validator
 
-### Проверка семантики:
+### Semantics Testing:
 - [ ] HTML5 Outliner
 - [ ] W3C Validator
 - [ ] Browser DevTools 
