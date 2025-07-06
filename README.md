@@ -16,6 +16,8 @@ A modern, responsive portfolio website with PWA (Progressive Web App) support.
 portfolio-site/
 ├── index.html              # Main page
 ├── manifest.json           # PWA manifest
+├── package.json            # Project configuration
+├── .gitignore             # Git ignore rules
 ├── README.md              # Documentation
 ├── src/
 │   ├── css/
@@ -27,11 +29,15 @@ portfolio-site/
 │   ├── js/
 │   │   ├── main.js        # Main JavaScript
 │   │   └── service-worker.js # Service Worker
-│   └── images/            # Images
+│   ├── images/            # Images
+│   └── components/        # Additional components
 ├── assets/
 │   ├── fonts/             # Fonts
 │   └── icons/             # Icons
 └── docs/                  # Documentation
+    ├── MIGRATION.md       # Migration guide
+    ├── SEMANTIC_IMPROVEMENTS.md # Semantic improvements
+    └── CLASS_REFACTORING.md # BEM methodology guide
 ```
 
 ## Technologies
@@ -62,8 +68,9 @@ portfolio-site/
    ```
 
 3. **Customize for yourself:**
-   - Edit `index.html` - replace content
+   - Edit `index.html` - replace "Piyush Raorane" with your name
    - Update `manifest.json` - change name and icons
+   - Update `package.json` - change author and project details
    - Add your images to `src/images/`
 
 ## Configuration
@@ -72,7 +79,7 @@ portfolio-site/
 
 1. **Personal Information:**
    - Open `index.html`
-   - Replace "Your Name" with your name
+   - Replace "Piyush Raorane" with your name
    - Update description and contact information
 
 2. **Projects:**
@@ -115,6 +122,14 @@ portfolio-site/
 - Compress images before adding
 - Minify CSS and JS for production
 - Use modern image formats (WebP)
+
+## Documentation
+
+The project includes comprehensive documentation in the `docs/` folder:
+
+- **MIGRATION.md** - Guide for migrating from the original structure
+- **SEMANTIC_IMPROVEMENTS.md** - Details about semantic HTML improvements
+- **CLASS_REFACTORING.md** - BEM methodology implementation guide
 
 ## PWA Features
 
