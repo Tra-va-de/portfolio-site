@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleScrollToTop() {
     if (window.scrollY > 300) {
       scrollToTopBtn.style.display = 'block';
+      scrollToTopBtn.style.paddingBottom = "8px";
     } else {
       scrollToTopBtn.style.display = 'none';
     }
