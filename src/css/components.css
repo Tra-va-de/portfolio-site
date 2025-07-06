@@ -150,28 +150,6 @@
   border-radius: 2px;
 }
 
-/* Skills List */
-.skills-container {
-  margin-top: 20px;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skills-list li {
-  background: #f0f0f0;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-}
-
 /* Project & Experience Grid */
 .projects-grid,
 .experience-grid {
