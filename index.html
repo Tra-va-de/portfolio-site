@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Piyush Raorane | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Портфолио | Веб-разработчик</title>
+  <meta name="description" content="Портфолио веб-разработчика с проектами и навыками" />
+  <link rel="stylesheet" href="src/css/main.css" />
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="images/icon-192.png" type="image/png" />
-  <script defer src="main.js"></script>
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png" />
+  <script defer src="src/js/main.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <!-- Hero Section -->
   <header class="hero">
-    <img src="images/resume photo.jpg" alt="Profile Photo" class="profile-img" />
-    <h1>Piyush Raorane</h1>
-    <p>Full-Stack Web Developer | Computer Engineering Student</p>
+    <img src="src/images/profile.jpg" alt="Фото профиля" class="profile-img" />
+    <h1>Ваше Имя</h1>
+    <p>Full-Stack Веб-разработчик | Студент Компьютерной Инженерии</p>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </header>
 
   <!-- About Section -->
   <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate full-stack web developer with a love for creating innovative digital solutions. My journey in programming started with curiosity and has evolved into a deep commitment to crafting clean, efficient, and user-friendly applications.</p>
-    <p>With expertise spanning both front-end and back-end technologies, I enjoy the challenge of bringing ideas to life through code. I believe in writing maintainable code, following best practices, and continuously learning new technologies to stay at the forefront of web development.</p>
-    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on meaningful projects.</p>
+    <h2>Обо мне</h2>
+    <p>Я увлеченный full-stack веб-разработчик с любовью к созданию инновационных цифровых решений. Мой путь в программировании начался с любопытства и превратился в глубокую приверженность созданию чистых, эффективных и удобных приложений.</p>
+    <p>Обладая опытом как в front-end, так и в back-end технологиях, я получаю удовольствие от вызова воплощения идей в жизнь через код. Я верю в написание поддерживаемого кода, следование лучшим практикам и постоянное изучение новых технологий для того, чтобы оставаться на переднем крае веб-разработки.</p>
+    <p>Когда я не пишу код, вы найдете меня изучающим новые технологии, вносящим вклад в open-source проекты или делящимся знаниями с сообществом разработчиков. Я всегда рад взяться за новые задачи и сотрудничать над значимыми проектами.</p>
   </section>
 
   <!-- Skills -->
   <section class="section" id="skills">
-    <h2>Skills & Technologies</h2>
+    <h2>Навыки и Технологии</h2>
     <ul class="skills-list">
       <li>React</li><li>Node.js</li><li>Vue.js</li><li>Express</li><li>MongoDB</li>
       <li>WordPress</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
@@ -45,48 +46,48 @@
 
   <!-- Projects -->
   <section class="section" id="projects">
-    <h2>Projects</h2>
+    <h2>Проекты</h2>
     <div class="projects-grid">
 
       <div class="card">
-        <img src="images/ecommerce.jpg" alt="E-Commerce Platform">
-        <h3>E-Commerce Platform</h3>
-        <p>Full-stack e-commerce app with auth, payments, and dashboard.</p>
+        <img src="src/images/ecommerce.jpg" alt="E-Commerce Платформа">
+        <h3>E-Commerce Платформа</h3>
+        <p>Full-stack e-commerce приложение с аутентификацией, платежами и панелью управления.</p>
         <span class="tech">React • Node.js • MongoDB</span>
       </div>
 
       <div class="card">
-        <img src="images/project2.png" alt="Task Management App">
-        <h3>Task Management App</h3>
-        <p>Collaborative tool with real-time updates & team tasks.</p>
+        <img src="src/images/project2.png" alt="Приложение для управления задачами">
+        <h3>Приложение для управления задачами</h3>
+        <p>Инструмент для совместной работы с обновлениями в реальном времени и командными задачами.</p>
         <span class="tech">Vue.js • Express • Socket.io</span>
       </div>
 
       <div class="card">
-        <img src="images/project1.png" alt="Weather Dashboard">
-        <h3>Weather Dashboard</h3>
-        <p>Responsive app with forecasts and interactive charts.</p>
+        <img src="src/images/project1.png" alt="Панель погоды">
+        <h3>Панель погоды</h3>
+        <p>Адаптивное приложение с прогнозами и интерактивными графиками.</p>
         <span class="tech">JavaScript • APIs • Chart.js</span>
       </div>
 
       <div class="card">
-        <img src="images/portfolio.jpg" alt="Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>Modern, responsive site to showcase your projects and skills.</p>
+        <img src="src/images/portfolio.jpg" alt="Сайт портфолио">
+        <h3>Сайт портфолио</h3>
+        <p>Современный, адаптивный сайт для демонстрации ваших проектов и навыков.</p>
         <span class="tech">React • Tailwind • Framer Motion</span>
       </div>
 
       <div class="card">
-        <img src="images/blog-site.jpg" alt="Blog CMS">
-        <h3>Blog CMS</h3>
-        <p>SEO-optimized content manager with rich text editing.</p>
+        <img src="src/images/blog-site.jpg" alt="CMS для блога">
+        <h3>CMS для блога</h3>
+        <p>SEO-оптимизированный менеджер контента с богатым текстовым редактором.</p>
         <span class="tech">WordPress • PHP • MySQL</span>
       </div>
 
       <div class="card">
-        <img src="images/Data-Visualization-Tools.jpg" alt="Data Viz Tool">
-        <h3>Data Visualization Tool</h3>
-        <p>Interactive dashboard for analyzing and visualizing data.</p>
+        <img src="src/images/Data-Visualization-Tools.jpg" alt="Инструмент визуализации данных">
+        <h3>Инструмент визуализации данных</h3>
+        <p>Интерактивная панель для анализа и визуализации данных.</p>
         <span class="tech">Python • D3.js • Flask</span>
       </div>
     </div>
@@ -94,35 +95,35 @@
 
   <!-- Work Experience -->
   <section class="section" id="experience">
-    <h2>Experience</h2>
+    <h2>Опыт работы</h2>
     <div class="experience-grid">
       <div class="card">
-        <h3>Intern at XYZ Company</h3>
-        <p>Worked on full-stack development including CMS & e-commerce platforms.</p>
+        <h3>Стажер в XYZ Company</h3>
+        <p>Работал над full-stack разработкой, включая CMS и e-commerce платформы.</p>
       </div>
       <div class="card">
-        <h3>Intern at ABC Pvt. Ltd.</h3>
-        <p>Contributed to frontend, WordPress customization, and APIs.</p>
+        <h3>Стажер в ABC Pvt. Ltd.</h3>
+        <p>Внес вклад в frontend, настройку WordPress и API.</p>
       </div>
     </div>
   </section>
 
   <!-- Let's Work Together -->
   <section class="section" id="work">
-    <h2>Let's Work Together</h2>
-    <p>I’m always interested in new opportunities and exciting projects. Let’s connect!</p>
+    <h2>Давайте работать вместе</h2>
+    <p>Я всегда заинтересован в новых возможностях и захватывающих проектах. Давайте свяжемся!</p>
 
     <ul>
-      <li><strong>Email:</strong> piyushraorane24@gmail.com</li>
-      <li><strong>Phone:</strong> +91 7276702595</li>
-      <li><strong>Location:</strong> India</li>
+      <li><strong>Email:</strong> your.email@example.com</li>
+      <li><strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</li>
+      <li><strong>Местоположение:</strong> Россия</li>
     </ul>
 
-    <p><strong>Services I Offer:</strong></p>
+    <p><strong>Услуги, которые я предлагаю:</strong></p>
     <ul>
-      <li>💡 Web Development – Custom websites & applications</li>
-      <li>🚀 Full-Stack Solutions – End-to-end development</li>
-      <li>🔧 Technical Consulting – Architecture & tech advice</li>
+      <li>💡 Веб-разработка – Пользовательские сайты и приложения</li>
+      <li>🚀 Full-Stack решения – End-to-end разработка</li>
+      <li>🔧 Техническое консультирование – Архитектура и технические советы</li>
     </ul>
   </section>
 
