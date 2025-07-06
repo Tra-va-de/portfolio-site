@@ -37,14 +37,14 @@
   <!-- Navigation -->
   <nav class="nav" aria-label="Главная навигация">
     <div class="container">
-      <a href="#home" class="nav__logo" aria-label="На главную">Портфолио</a>
+      <a href="#home" class="nav__logo" aria-label="Go home">Portfolio</a>
 
       <ul class="nav__menu">
-        <li><a href="#about" class="nav__link">Обо мне</a></li>
-        <li><a href="#skills" class="nav__link">Навыки</a></li>
-        <li><a href="#projects" class="nav__link">Проекты</a></li>
-        <li><a href="#experience" class="nav__link">Опыт</a></li>
-        <li><a href="#contact" class="nav__link">Контакты</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -53,11 +53,11 @@
   <header class="hero" id="home">
     <div class="hero-content">
       <div class="container">
-        <img src="src/images/profile.jpg" alt="Фото профиля" class="profile-img" />
-        <h1>Ваше Имя</h1>
-        <p class="hero-subtitle">Full-Stack Веб-разработчик | Студент Компьютерной Инженерии</p>
+        <img src="src/images/profile.jpg" alt="Profile Photo" class="profile-img" />
+        <h1>Piyush Raorane</h1>
+        <p class="hero-subtitle">Full-Stack Web Developer | Computer Engineering Student</p>
 
-        <nav class="social-nav" aria-label="Социальные сети">
+        <nav class="social-nav" aria-label="Social Networks">
           <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -72,23 +72,13 @@
     <section class="about" id="about">
       <div class="container">
         <header class="about__header section-header">
-          <h2 class="about__title">Обо мне</h2>
+          <h2 class="about__title">About Me</h2>
         </header>
 
         <article class="about__content">
-          <p class="about__text">Я увлеченный full-stack веб-разработчик с любовью к созданию инновационных цифровых
-            решений. Мой путь в
-            программировании начался с любопытства и превратился в глубокую приверженность созданию чистых, эффективных
-            и
-            удобных приложений.</p>
-          <p class="about__text">Обладая опытом как в front-end, так и в back-end технологиях, я получаю удовольствие от
-            вызова воплощения
-            идей в жизнь через код. Я верю в написание поддерживаемого кода, следование лучшим практикам и постоянное
-            изучение новых технологий для того, чтобы оставаться на переднем крае веб-разработки.</p>
-          <p class="about__text">Когда я не пишу код, вы найдете меня изучающим новые технологии, вносящим вклад в
-            open-source проекты или
-            делящимся знаниями с сообществом разработчиков. Я всегда рад взяться за новые задачи и сотрудничать над
-            значимыми проектами.</p>
+          <p class="about__text">I'm a passionate full-stack web developer with a love for creating innovative digital solutions. My journey in programming started with curiosity and has evolved into a deep commitment to crafting clean, efficient, and user-friendly applications.</p>
+          <p class="about__text">With expertise spanning both front-end and back-end technologies, I enjoy the challenge of bringing ideas to life through code. I believe in writing maintainable code, following best practices, and continuously learning new technologies to stay at the forefront of web development.</p>
+          <p class="about__text">When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on meaningful projects.</p>
         </article>
       </div>
     </section>
@@ -97,11 +87,11 @@
     <section class="skills" id="skills">
       <div class="container">
         <header class="skills__header section-header">
-          <h2 class="skills__title">Навыки и Технологии</h2>
+          <h2 class="skills__title">Skills & Technologies</h2>
         </header>
         <div class="skills__content">
           <div class="skills__carousel">
-            <ul class="skills__list skills__list--primary" role="list" aria-label="Навыки и технологии">
+            <ul class="skills__list skills__list--primary" role="list" aria-label="Skills and Technologies">
               <li class="skills__item" role="listitem">React</li>
               <li class="skills__item" role="listitem">Node.js</li>
               <li class="skills__item" role="listitem">Vue.js</li>
@@ -140,68 +130,66 @@
     <section class="projects" id="projects">
       <div class="container">
         <header class="projects__header section-header">
-          <h2 class="projects__title">Проекты</h2>
+          <h2 class="projects__title">Projects</h2>
         </header>
-        <div class="projects__list projects-grid" role="grid" aria-label="Список проектов">
+        <div class="projects__list projects-grid" role="grid" aria-label="Projects List">
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/ecommerce.jpg" alt="Скриншот E-Commerce Платформы" class="projects__image">
+            <img src="src/images/ecommerce.jpg" alt="E-Commerce Platform Screenshot" class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">E-Commerce Платформа</h3>
-              <p class="projects__desc">Full-stack e-commerce приложение с аутентификацией, платежами и панелью
-                управления.</p>
+              <h3 class="projects__name">E-Commerce Platform</h3>
+              <p class="projects__desc">Full-stack e-commerce app with auth, payments, and dashboard.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">React • Node.js • MongoDB</span>
               </footer>
             </div>
           </article>
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/project2.png" alt="Скриншот приложения для управления задачами"
+            <img src="src/images/project2.png" alt="Task Management App Screenshot"
               class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">Приложение для управления задачами</h3>
-              <p class="projects__desc">Инструмент для совместной работы с обновлениями в реальном времени и командными
-                задачами.</p>
+              <h3 class="projects__name">Task Management App</h3>
+              <p class="projects__desc">Collaborative tool with real-time updates & team tasks.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">Vue.js • Express • Socket.io</span>
               </footer>
             </div>
           </article>
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/project1.png" alt="Скриншот панели погоды" class="projects__image">
+            <img src="src/images/project1.png" alt="Weather Dashboard Screenshot" class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">Панель погоды</h3>
-              <p class="projects__desc">Адаптивное приложение с прогнозами и интерактивными графиками.</p>
+              <h3 class="projects__name">Weather Dashboard</h3>
+              <p class="projects__desc">Responsive app with forecasts and interactive charts.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">JavaScript • APIs • Chart.js</span>
               </footer>
             </div>
           </article>
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/portfolio.jpg" alt="Скриншот сайта портфолио" class="projects__image">
+            <img src="src/images/portfolio.jpg" alt="Portfolio Website Screenshot" class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">Сайт портфолио</h3>
-              <p class="projects__desc">Современный, адаптивный сайт для демонстрации ваших проектов и навыков.</p>
+              <h3 class="projects__name">Portfolio Website</h3>
+              <p class="projects__desc">Modern, responsive site to showcase your projects and skills.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">React • Tailwind • Framer Motion</span>
               </footer>
             </div>
           </article>
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/blog-site.jpg" alt="Скриншот CMS для блога" class="projects__image">
+            <img src="src/images/blog-site.jpg" alt="Blog CMS Screenshot" class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">CMS для блога</h3>
-              <p class="projects__desc">SEO-оптимизированный менеджер контента с богатым текстовым редактором.</p>
+              <h3 class="projects__name">Blog CMS</h3>
+              <p class="projects__desc">SEO-optimized content manager with rich text editing.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">WordPress • PHP • MySQL</span>
               </footer>
             </div>
           </article>
           <article class="projects__item card" role="gridcell">
-            <img src="src/images/Data-Visualization-Tools.jpg" alt="Скриншот инструмента визуализации данных"
+            <img src="src/images/Data-Visualization-Tools.jpg" alt="Data Visualization Tool Screenshot"
               class="projects__image">
             <div class="projects__content">
-              <h3 class="projects__name">Инструмент визуализации данных</h3>
-              <p class="projects__desc">Интерактивная панель для анализа и визуализации данных.</p>
+              <h3 class="projects__name">Data Visualization Tool</h3>
+              <p class="projects__desc">Interactive dashboard for analyzing and visualizing data.</p>
               <footer class="projects__footer">
                 <span class="projects__tech">Python • D3.js • Flask</span>
               </footer>
@@ -215,22 +203,22 @@
     <section class="experience" id="experience">
       <div class="container">
         <header class="experience__header section-header">
-          <h2 class="experience__title">Опыт работы</h2>
+          <h2 class="experience__title">Experience</h2>
         </header>
         <div class="experience__list experience-grid" role="list">
           <article class="experience__item card" role="listitem">
             <header class="experience__item-header">
-              <h3 class="experience__item-title">Стажер в XYZ Company</h3>
-              <time class="experience__item-time" datetime="2023-06">Июнь 2023</time>
-            </header>
-            <p class="experience__item-desc">Работал над full-stack разработкой, включая CMS и e-commerce платформы.</p>
+                      <h3 class="experience__item-title">Intern at XYZ Company</h3>
+        <time class="experience__item-time" datetime="2023-06">June 2023</time>
+      </header>
+      <p class="experience__item-desc">Worked on full-stack development including CMS & e-commerce platforms.</p>
           </article>
           <article class="experience__item card" role="listitem">
             <header class="experience__item-header">
-              <h3 class="experience__item-title">Стажер в ABC Pvt. Ltd.</h3>
-              <time class="experience__item-time" datetime="2023-03">Март 2023</time>
-            </header>
-            <p class="experience__item-desc">Внес вклад в frontend, настройку WordPress и API.</p>
+                      <h3 class="experience__item-title">Intern at ABC Pvt. Ltd.</h3>
+        <time class="experience__item-time" datetime="2023-03">March 2023</time>
+      </header>
+      <p class="experience__item-desc">Contributed to frontend, WordPress customization, and APIs.</p>
           </article>
         </div>
       </div>
@@ -240,31 +228,27 @@
     <section class="contact" id="contact">
       <div class="container">
         <header class="contact__header section-header">
-          <h2 class="contact__title">Давайте работать вместе</h2>
+          <h2 class="contact__title">Let's Work Together</h2>
         </header>
         <div class="contact__content">
-          <p class="contact__desc">Я всегда заинтересован в новых возможностях и захватывающих проектах. Давайте
-            свяжемся!
-          </p>
+                  <p class="contact__desc">I'm always interested in new opportunities and exciting projects. Let's connect!</p>
           <address class="contact__info">
             <dl class="contact__info-list">
               <dt class="contact__info-term">Email:</dt>
-              <dd class="contact__info-value"><a href="mailto:your.email@example.com">your.email@example.com</a></dd>
-              <dt class="contact__info-term">Телефон:</dt>
-              <dd class="contact__info-value"><a href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a></dd>
-              <dt class="contact__info-term">Местоположение:</dt>
-              <dd class="contact__info-value">Россия</dd>
+              <dd class="contact__info-value"><a href="mailto:piyushraorane24@gmail.com">piyushraorane24@gmail.com</a></dd>
+                      <dt class="contact__info-term">Phone:</dt>
+        <dd class="contact__info-value"><a href="tel:+917276702595">+91 7276702595</a></dd>
+        <dt class="contact__info-term">Location:</dt>
+        <dd class="contact__info-value">India</dd>
             </dl>
           </address>
           <aside class="contact__services">
-            <h3 class="contact__services-title">Услуги, которые я предлагаю:</h3>
-            <ul class="contact__services-list" role="list">
-              <li class="contact__services-item" role="listitem">💡 Веб-разработка – Пользовательские сайты и приложения
-              </li>
-              <li class="contact__services-item" role="listitem">🚀 Full-Stack решения – End-to-end разработка</li>
-              <li class="contact__services-item" role="listitem">🔧 Техническое консультирование – Архитектура и
-                технические советы</li>
-            </ul>
+                    <h3 class="contact__services-title">Services I Offer:</h3>
+        <ul class="contact__services-list" role="list">
+          <li class="contact__services-item" role="listitem">💡 Web Development – Custom websites & applications</li>
+          <li class="contact__services-item" role="listitem">🚀 Full-Stack Solutions – End-to-end development</li>
+          <li class="contact__services-item" role="listitem">🔧 Technical Consulting – Architecture & tech advice</li>
+        </ul>
           </aside>
         </div>
       </div>
@@ -274,13 +258,13 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="container">
-        <p>&copy; <time datetime="2024">2024</time> Ваше Имя. Все права защищены.</p>
+        <p>&copy; <time datetime="2024">2024</time> Piyush Raorane. All rights reserved.</p>
         
-        <nav class="footer-nav" aria-label="Дополнительная навигация">
-          <a href="#home">Наверх</a>
-          <a href="#about">Обо мне</a>
-          <a href="#projects">Проекты</a>
-          <a href="#contact">Контакты</a>
+        <nav class="footer-nav" aria-label="Additional Navigation">
+          <a href="#home">Top</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </div>
